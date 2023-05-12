@@ -1,0 +1,1031 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="UI.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_gravity="top"
+                android:src="@drawable/stevepic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Steven Wax"
+                android:fontFamily="sans-serif-light"
+                android:textSize="45dp"
+                android:textStyle="bold"
+                android:textColor="@color/green"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="375dp"
+                android:orientation="vertical"
+                android:background="@android:color/transparent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/learn_more_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:paddingVertical="8dp"
+                        android:gravity="center"
+                        android:textColor="@color/green"
+                        android:background="@drawable/button_bg"
+                        android:text="Learn more about me"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:background="@android:color/transparent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardview_expertise"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:layout_marginHorizontal="16dp"
+                        android:backgroundTint="@android:color/transparent"
+                        app:cardCornerRadius="5dp"
+                        app:strokeColor="@color/teal_200"
+                        app:strokeWidth="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="@android:color/transparent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:background="@android:color/transparent">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.8"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:textColor="@color/green"
+                                    android:textSize="20sp"
+                                    android:text="Expertise"
+                                    android:layout_margin="5dp"/>
+
+                                <ImageView
+                                    android:id="@+id/expertise_show"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:padding="5dp"
+                                    app:srcCompat="@android:drawable/arrow_down_float"
+                                    app:tint="@color/green" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/expertise_hidden_layout"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@android:drawable/presence_invisible"
+                                        app:tint="@color/green" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/expertise1"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@android:drawable/presence_invisible"
+                                        app:tint="@color/green" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/expertise2"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@android:drawable/presence_invisible"
+                                        app:tint="@color/green" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/expertise3"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@android:drawable/presence_invisible"
+                                        app:tint="@color/green" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/expertise4"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@android:drawable/presence_invisible"
+                                        app:tint="@color/green" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/expertise5"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@android:drawable/presence_invisible"
+                                        app:tint="@color/green" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/expertise6"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@android:drawable/presence_invisible"
+                                        app:tint="@color/green" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/expertise7"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@android:drawable/presence_invisible"
+                                        app:tint="@color/green" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/expertise8"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@android:drawable/presence_invisible"
+                                        app:tint="@color/green" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/expertise9"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@android:drawable/presence_invisible"
+                                        app:tint="@color/green" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/expertise10"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:background="@android:color/transparent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardview_tech"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:layout_marginHorizontal="16dp"
+                        android:backgroundTint="@android:color/transparent"
+                        app:cardCornerRadius="5dp"
+                        app:strokeColor="@color/teal_200"
+                        app:strokeWidth="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="@android:color/transparent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:background="@android:color/transparent">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.8"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:textColor="@color/green"
+                                    android:textSize="20sp"
+                                    android:text="Technical Qualifications"
+                                    android:layout_margin="5dp"/>
+
+                                <ImageView
+                                    android:id="@+id/tech_show"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:padding="5dp"
+                                    app:srcCompat="@android:drawable/arrow_down_float"
+                                    app:tint="@color/green" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/tech_hidden_layout"
+                                android:visibility="gone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="top"
+                                        android:layout_margin="5dp"
+                                        app:srcCompat="@android:drawable/presence_invisible"
+                                        app:tint="@color/green" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tech_qualifications1"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="top"
+                                        android:layout_margin="5dp"
+                                        app:srcCompat="@android:drawable/presence_invisible"
+                                        app:tint="@color/green" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tech_qualifications2"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="top"
+                                        android:layout_margin="5dp"
+                                        app:srcCompat="@android:drawable/presence_invisible"
+                                        app:tint="@color/green" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tech_qualifications3"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="top"
+                                        android:layout_margin="5dp"
+                                        app:srcCompat="@android:drawable/presence_invisible"
+                                        app:tint="@color/green" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tech_qualifications4"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="top"
+                                        android:layout_margin="5dp"
+                                        app:srcCompat="@android:drawable/presence_invisible"
+                                        app:tint="@color/green" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tech_qualifications5"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="top"
+                                        android:layout_margin="5dp"
+                                        app:srcCompat="@android:drawable/presence_invisible"
+                                        app:tint="@color/green" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tech_qualifications6"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10dp"
+                                        android:layout_gravity="top"
+                                        android:layout_margin="5dp"
+                                        app:srcCompat="@android:drawable/presence_invisible"
+                                        app:tint="@color/green" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/tech_qualifications7"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:background="@android:color/transparent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardview_education"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:layout_marginHorizontal="16dp"
+                        android:backgroundTint="@android:color/transparent"
+                        app:cardCornerRadius="5dp"
+                        app:strokeColor="@color/teal_200"
+                        app:strokeWidth="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="@android:color/transparent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:background="@android:color/transparent">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.8"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:textColor="@color/green"
+                                    android:textSize="20sp"
+                                    android:text="Education"
+                                    android:layout_margin="5dp"/>
+
+                                <ImageView
+                                    android:id="@+id/education_show"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:padding="5dp"
+                                    app:srcCompat="@android:drawable/arrow_down_float"
+                                    app:tint="@color/green" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/education_hidden_layout"
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.7"
+                                        android:textSize="19sp"
+                                        android:textStyle="bold"
+                                        android:text="@string/education1"
+                                        android:textColor="@color/green"/>
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.3"
+                                        android:text="2020-2023"
+                                        android:textColor="@color/green" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Bachelors of Science, Software Development"
+                                        android:textColor="@color/green"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/experience_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:paddingVertical="8dp"
+                        android:gravity="center"
+                        android:textColor="@color/green"
+                        android:background="@drawable/button_bg"
+                        android:text="See my Experience"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:id="@+id/looking_for_button"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:layout_marginVertical="5dp"
+                        android:layout_marginHorizontal="20dp"
+                        android:paddingVertical="8dp"
+                        android:gravity="center"
+                        android:textColor="@color/green"
+                        android:background="@drawable/button_bg"
+                        android:text="What I'm looking for"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:background="@android:color/transparent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardview_references"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:layout_marginHorizontal="16dp"
+                        android:backgroundTint="@android:color/transparent"
+                        app:cardCornerRadius="5dp"
+                        app:strokeColor="@color/teal_200"
+                        app:strokeWidth="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="@android:color/transparent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:background="@android:color/transparent">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.8"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:textColor="@color/green"
+                                    android:textSize="20sp"
+                                    android:text="References"
+                                    android:layout_margin="5dp"/>
+
+                                <ImageView
+                                    android:id="@+id/references_show"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:padding="5dp"
+                                    app:srcCompat="@android:drawable/arrow_down_float"
+                                    app:tint="@color/green" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/references_hidden_layout"
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="19sp"
+                                    android:textStyle="bold"
+                                    android:text="Scott Ziegler"
+                                    android:textColor="@color/green"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Email: "
+                                        android:textColor="@color/green"/>
+
+                                    <TextView
+                                        android:id="@+id/scottz_email"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="scottz@cox.net"
+                                        android:textColor="@color/teal_200"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Phone: "
+                                        android:textColor="@color/green"/>
+
+                                    <TextView
+                                        android:id="@+id/scottz_phone"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="949-285-7066"
+                                        android:textColor="@color/teal_200"/>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="19sp"
+                                    android:textStyle="bold"
+                                    android:text="Joseph Martinez"
+                                    android:textColor="@color/green"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Email: "
+                                        android:textColor="@color/green"/>
+
+                                    <TextView
+                                        android:id="@+id/joe_email"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="josepham0215@gmail.com"
+                                        android:textColor="@color/teal_200"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Phone: "
+                                        android:textColor="@color/green"/>
+
+                                    <TextView
+                                        android:id="@+id/joe_phone"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="415-328-2645"
+                                        android:textColor="@color/teal_200"/>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:textSize="19sp"
+                                    android:textStyle="bold"
+                                    android:text="Jim Collette"
+                                    android:textColor="@color/green"/>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Email: "
+                                        android:textColor="@color/green"/>
+
+                                    <TextView
+                                        android:id="@+id/jim_email"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="jimc.mobi@gmail.com"
+                                        android:textColor="@color/teal_200"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Phone: "
+                                        android:textColor="@color/green"/>
+
+                                    <TextView
+                                        android:id="@+id/jim_phone"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="425-313-1756"
+                                        android:textColor="@color/teal_200"/>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal"
+                    android:background="@android:color/transparent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cardview_contact"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.9"
+                        android:layout_marginHorizontal="16dp"
+                        android:backgroundTint="@android:color/transparent"
+                        app:cardCornerRadius="5dp"
+                        app:strokeColor="@color/teal_200"
+                        app:strokeWidth="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:background="@android:color/transparent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:orientation="horizontal"
+                                android:background="@android:color/transparent">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_weight="0.8"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:textColor="@color/green"
+                                    android:textSize="20sp"
+                                    android:text="Contact Me"
+                                    android:layout_margin="5dp"/>
+
+                                <ImageView
+                                    android:id="@+id/contact_show"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:padding="5dp"
+                                    app:srcCompat="@android:drawable/arrow_down_float"
+                                    app:tint="@color/green" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/contact_hidden_layout"
+                                android:visibility="gone"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Email: "
+                                        android:textColor="@color/green"/>
+
+                                    <TextView
+                                        android:id="@+id/swax_email"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="stevehwax@gmail.com"
+                                        android:textColor="@color/teal_200"/>
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Phone: "
+                                        android:textColor="@color/green"/>
+
+                                    <TextView
+                                        android:id="@+id/swax_phone"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="425-345-9290"
+                                        android:textColor="@color/teal_200"/>
+
+                                </LinearLayout>
+
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

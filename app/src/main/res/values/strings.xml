@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Steven Wax Resume</string>
+    <string name="expertise1">Issue investigation and analysis</string>
+    <string name="expertise2">Business impact analysis</string>
+    <string name="expertise3">Written communication</string>
+    <string name="expertise4">Writing technical documentation</string>
+    <string name="expertise5">Data driven process design</string>
+    <string name="expertise6">Team and user training</string>
+    <string name="expertise7">Project+ certified</string>
+    <string name="expertise8">Customer advocacy</string>
+    <string name="expertise9">Data analysis</string>
+    <string name="expertise10">Supporting a global business</string>
+    <string name="tech_qualifications1">Development: Java, C#, Bash, Node.js, Javascript, MongoDB, SQL, CSS, HTML</string>
+    <string name="tech_qualifications2">Troubleshooting: Java, C#, Bash, Node.js, MongoDB, SQL, HTML, CSS, XML, JSON, Jacascript, Web services</string>
+    <string name="tech_qualifications3">AWS Services: EC2, S3</string>
+    <string name="tech_qualifications4">Desktop: Windows 10/11, Ubuntu Linux, Mac OSX</string>
+    <string name="tech_qualifications5">Mobile: Android</string>
+    <string name="tech_qualifications6">Software: Git, Team City, Bamboo, Android Studio, MySQL, Visual Studio 2010, IntelliJ, Mediawiki, MS Office, Firefox, Chrome</string>
+    <string name="tech_qualifications7">Hardware: A+ Certified, Network cabling</string>
+    <string name="education1">Western Govenors University</string>
+</resources>
