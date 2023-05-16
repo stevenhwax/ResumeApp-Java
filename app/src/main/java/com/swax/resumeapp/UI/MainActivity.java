@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mContext = MainActivity.this;
+
         aboutMe = findViewById(R.id.learn_more_button);
 
         cardViewExpertise = findViewById(R.id.cardview_expertise);
@@ -201,6 +202,32 @@ public class MainActivity extends AppCompatActivity {
 
         joePhone.setOnClickListener(view -> {
             callPhone(joePhone.getText().toString());
+        });
+
+        jimEmail.setOnClickListener(view -> {
+            sendEmail(jimEmail.getText().toString(), "Questions about Steven Wax");
+        });
+
+        jimPhone.setOnClickListener(view -> {
+            callPhone(jimPhone.getText().toString());
+        });
+
+        showArrowContact.setOnClickListener(view -> {
+            if(hiddenGroupContact.getVisibility() == View.VISIBLE){
+                hiddenGroupContact.setVisibility(View.GONE);
+                showArrowContact.setImageResource(android.R.drawable.arrow_down_float);
+            } else {
+                hiddenGroupContact.setVisibility(View.VISIBLE);
+                showArrowContact.setImageResource(android.R.drawable.arrow_up_float);
+            }
+        });
+
+        swaxEmail.setOnClickListener(view -> {
+            sendEmail(swaxEmail.getText().toString(), "Was looking at your resume app");
+        });
+
+        swaxPhone.setOnClickListener(view -> {
+            callPhone(swaxPhone.getText().toString());
         });
 
     }
