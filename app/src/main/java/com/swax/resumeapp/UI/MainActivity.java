@@ -3,15 +3,19 @@ package com.swax.resumeapp.UI;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.Group;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.transition.Fade;
 import androidx.transition.Slide;
 import androidx.transition.Transition;
 import androidx.transition.TransitionManager;
 import androidx.transition.AutoTransition;
 
+import android.Manifest;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -248,8 +252,65 @@ public class MainActivity extends AppCompatActivity {
 
     public void callPhone(String number){
         Intent phoneIntent = new Intent(Intent.ACTION_CALL);
+        number = number.replaceAll("-", "");
         phoneIntent.setData(Uri.parse("tel:" + number));
-        startActivity(phoneIntent);
+        int requestCode = 0;
+        switch(number){
+            case "9492857066":
+                requestCode = 1;
+                break;
+            case "4153282645":
+                requestCode = 2;
+                break;
+            case "4253131756":
+                requestCode = 3;
+                break;
+        }
+
+        if(ContextCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(MainActivity.this, new String[]{Manifest.permission.CALL_PHONE}, requestCode);
+        } else {
+            try{
+                startActivity(phoneIntent);
+            } catch(SecurityException e){
+                e.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        Intent phoneIntent = new Intent(Intent.ACTION_CALL);
+        switch (requestCode) {
+            case 1: {
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    phoneIntent.setData(Uri.parse("tel:9492857066"));
+                    startActivity(phoneIntent);
+                } else {
+
+                }
+                return;
+            }
+            case 2: {
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    phoneIntent.setData(Uri.parse("tel:4153282645"));
+                    startActivity(phoneIntent);
+                } else {
+
+                }
+                return;
+            }
+            case 3: {
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    phoneIntent.setData(Uri.parse("tel:4253131756"));
+                    startActivity(phoneIntent);
+                } else {
+
+                }
+                return;
+            }
+        }
     }
 
 }
