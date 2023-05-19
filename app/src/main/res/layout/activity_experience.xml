@@ -12,146 +12,19 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
             android:textColor="@color/green"
             android:textSize="36sp"
             android:text="Employment History"/>
 
-        <LinearLayout
-            android:id="@+id/smith_micro_button"
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/job_list_recyclerview"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:orientation="horizontal"
-            android:background="@drawable/button_bg">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:padding="5dp"
-                android:textColor="@color/green"
-                android:textSize="16sp"
-                android:text="Smith Micro Software"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:gravity="right"
-                android:padding="5dp"
-                android:textColor="@color/green"
-                android:text="January 2019 - March 2023"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            android:background="@drawable/button_bg">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:padding="5dp"
-                android:textColor="@color/green"
-                android:textSize="16sp"
-                android:text="Customer Mobile /\nISM Connect"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:gravity="right"
-                android:padding="5dp"
-                android:textColor="@color/green"
-                android:text="April 2012 - January 2019"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            android:background="@drawable/button_bg">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:padding="5dp"
-                android:textColor="@color/green"
-                android:textSize="16sp"
-                android:text="Applied Discovery"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.6"
-                android:gravity="right"
-                android:padding="5dp"
-                android:textColor="@color/green"
-                android:text="January 2012 - November 2012"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            android:background="@drawable/button_bg">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:padding="5dp"
-                android:textColor="@color/green"
-                android:textSize="16sp"
-                android:text="Microsoft"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.6"
-                android:gravity="right"
-                android:padding="5dp"
-                android:textColor="@color/green"
-                android:text="October 2000 - December 2011"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="horizontal"
-            android:background="@drawable/button_bg">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.5"
-                android:padding="5dp"
-                android:textColor="@color/green"
-                android:textSize="16sp"
-                android:text="Amazon"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.6"
-                android:gravity="right"
-                android:padding="5dp"
-                android:textColor="@color/green"
-                android:text="September 1999 - October 2000"/>
-
-        </LinearLayout>
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:layout_marginTop="50dp"
+            android:background="@android:color/transparent"/>
 
     </LinearLayout>
 

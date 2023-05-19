@@ -12,26 +12,29 @@
         android:background="@drawable/button_bg">
 
         <TextView
-            android:id="@+id/company_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:textSize="24dp"
-            android:textColor="@color/green"
-            android:text="Company Name"/>
-
-        <TextView
             android:id="@+id/job_title"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:layout_margin="20dp"
+            android:textSize="24dp"
             android:textColor="@color/green"
             android:text="Job Title"/>
 
         <TextView
+            android:id="@+id/company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.025"
+            android:layout_marginHorizontal="20dp"
+            android:textColor="@color/green"
+            android:text="Company Name"/>
+
+        <TextView
             android:id="@+id/job_dates"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.025"
             android:layout_marginHorizontal="20dp"
             android:textColor="@color/green"
             android:text="Dates worked"/>
@@ -39,10 +42,24 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/job_recyclerview"
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
             android:layout_marginHorizontal="10dp"
             android:layout_marginTop="10dp"
             android:background="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.04"
+            android:layout_margin="10dp"
+            android:layout_gravity="right"
+            android:padding="5dp"
+            android:text="Close"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:background="@drawable/button_bg"/>
 
     </LinearLayout>
 
