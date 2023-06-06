@@ -12,8 +12,10 @@ import androidx.transition.TransitionManager;
 import androidx.transition.AutoTransition;
 
 import android.Manifest;
+import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
@@ -197,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         scottzPhone.setOnClickListener(view -> {
-            callPhone(scottzPhone.getText().toString());
+            showDialog(scottzPhone.getText().toString());
         });
 
         joeEmail.setOnClickListener(view -> {
@@ -205,7 +207,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         joePhone.setOnClickListener(view -> {
-            callPhone(joePhone.getText().toString());
+            showDialog(joePhone.getText().toString());
         });
 
         jimEmail.setOnClickListener(view -> {
@@ -213,7 +215,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         jimPhone.setOnClickListener(view -> {
-            callPhone(jimPhone.getText().toString());
+            showDialog(jimPhone.getText().toString());
         });
 
         showArrowContact.setOnClickListener(view -> {
@@ -248,6 +250,25 @@ public class MainActivity extends AppCompatActivity {
         } catch (android.content.ActivityNotFoundException ex){
             Toast.makeText(mContext, "No email clients found.", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public void showDialog(String number){
+        AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
+        builder.setMessage("You are about to make a phone call. While my references have graciously agreed to answer questions please be sure that you are ready to talk before proceeding.")
+                .setTitle("Calling Number")
+                .setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        callPhone(number);
+                    }
+                })
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                });
+        builder.show();
     }
 
     public void callPhone(String number){

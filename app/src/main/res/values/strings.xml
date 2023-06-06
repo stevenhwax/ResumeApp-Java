@@ -17,5 +17,17 @@
     <string name="tech_qualifications5">Mobile: Android</string>
     <string name="tech_qualifications6">Software: Git, Team City, Bamboo, Android Studio, MySQL, Visual Studio 2010, IntelliJ, Mediawiki, MS Office, Firefox, Chrome</string>
     <string name="tech_qualifications7">Hardware: A+ Certified, Network cabling</string>
-    <string name="education1">Western Govenors University</string>
+    <string name="education1">Western Governors University</string>
+    <string name="lookingfor_seattle_statement">"
+        I’m looking for another exciting engineering opportunity. I tend to gravitate to companies that are really innovating with their technology and keeping pace with what’s new in the world. I don’t find one particular problem space more interesting than others, there is so much to learn on any information technology project it’s almost always interesting. That’s one of the things I love about programming. \n\n
+        For businesses located in the greater Seattle area I am available to work in office, hybrid, or remote. My preference is for a hybrid or remote arrangement, and I have a proven track record of being highly successful working in that way. \n\n
+        My desired base pay is something in the range of $150,000 / year along with standard benefits. \n\n
+        My hours are flexible, but left to my own devices I tend to work later in the day. I am a night owl so if necessary I can work late into the night. \n"</string>
+    <string name="lookingfor_remote_statement">"
+        I’m looking for another exciting engineering opportunity. I tend to gravitate to companies that are really innovating with their technology and keeping pace with what’s new in the world. I don’t find one particular problem space more interesting than others, there is so much to learn on any information technology project it’s almost always interesting. That’s one of the things I love about programming. \n\n
+        I am unfortunately not able to relocate, so for businesses located outside the greater Seattle area I am only available for remote work. That said I have been a highly successful remote employee for 11 years, and I have no problem making meaningful contributions in a remote setting. \n\n
+        My desired base pay is something in the range of $150,000 / year along with standard benefits. \n\n
+        My hours are flexible, but left to my own devices I tend to work later in the day. I am a night owl so if necessary I can work late into the night. \n"
+
+    </string>
 </resources>
