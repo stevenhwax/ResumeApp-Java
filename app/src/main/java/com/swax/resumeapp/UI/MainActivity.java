@@ -2,14 +2,8 @@ package com.swax.resumeapp.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
-import androidx.constraintlayout.widget.Group;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-import androidx.transition.Fade;
-import androidx.transition.Slide;
-import androidx.transition.Transition;
-import androidx.transition.TransitionManager;
-import androidx.transition.AutoTransition;
 
 import android.Manifest;
 import android.app.AlertDialog;
@@ -21,14 +15,6 @@ import android.content.pm.PackageManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
-//import android.transition.AutoTransition;
-//import android.transition.Transition;
-//import android.transition.TransitionManager;
-import android.text.SpannableString;
-import android.text.TextUtils;
-import android.text.style.BulletSpan;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -40,7 +26,6 @@ import android.widget.VideoView;
 
 import com.swax.resumeapp.R;
 
-import java.util.ArrayList;
 
 
 public class MainActivity extends AppCompatActivity {

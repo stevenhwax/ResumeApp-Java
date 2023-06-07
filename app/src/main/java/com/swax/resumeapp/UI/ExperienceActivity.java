@@ -1,10 +1,6 @@
 package com.swax.resumeapp.UI;
 
-import android.app.Dialog;
 import android.os.Bundle;
-import android.view.Window;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
